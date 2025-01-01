@@ -1,0 +1,59 @@
+.clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  font-family: "Inter", sans-serif;
+  padding: 25px 0px;
+}
+
+.client-combine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.client-H {
+  font-size: 30px;
+  font-weight: 700;
+  color: #4D4D4D
+}
+
+.client-line {
+  font-size: 10px;
+  color: #89939e;
+}
+
+.client-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 130px;
+}
+
+.client-logo {
+  width: 30px;
+  height: 25px;
+}
+
+.client-logo3 {
+  background-color: black;
+  height: 20px;
+  width: 35px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 850px) {
+  .client-logos {
+    gap: 70px;
+  }
+
+  .client-H {
+    font-size: 20px;
+    font-weight: 700;
+    color: #263238;
+  }
+}

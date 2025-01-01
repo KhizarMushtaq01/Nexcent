@@ -1,0 +1,82 @@
+.unlock{
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 0px;
+}
+
+.unlock-img{
+    width: 280px;
+}
+
+.img-unlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.unlock-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.unseen{
+    font-size: 30px;
+    font-weight: 700;
+    color: #4D4D4D;
+}
+
+.unlock-para{
+    font-size: 10px;
+    color: #89939E;
+    text-align: center;
+    line-height: 24px;
+}
+
+.unlock-btn{
+    background: #4caf50;
+    color: white;
+    border-radius: 5px;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+:hover.unlock-btn{
+    background: #0a310c;
+}
+
+@media screen and (min-width: 300px) and (max-width: 590px) {
+    .unlock{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px 0px;
+    }
+    
+    .unlock-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .unseen{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .unlock-para{
+        font-size: 9px;
+        line-height: 20px;
+    }
+}

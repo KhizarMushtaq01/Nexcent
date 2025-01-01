@@ -1,0 +1,132 @@
+.achievement{
+    background-color: #f5f7fa;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0px;
+    flex-wrap: wrap;
+}
+
+.achievement-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.helping{
+    font-size: 30px;
+    font-weight: 700;
+    color: #4D4D4D;
+}
+
+.business{
+    font-size: 30px;
+    font-weight: 700;
+    color: #4caf50;
+}
+/* .payments{
+    margin-left: 20px;
+} */
+.sml{
+    font-size: 13px;
+    color: #4D4D4D;
+}
+
+.nmbrs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.achieve-img{
+    /* padding: 5px; */
+    width: 25px;
+    height: 20px;
+}
+
+
+.upper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.one-txt{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.name{
+    font-size: 20px;
+    font-weight: bold;
+    color: #4D4D4D;
+}
+
+.numbers{
+    font-size: 10px;
+    color: #4D4D4D;
+}
+
+@media screen and (min-width: 300px) and (max-width: 750px) {
+ .achievement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+ }   
+
+ .achievement-txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+ }
+
+ .helping{
+    font-size: 20px;
+ }
+
+ .business{
+    font-size: 20px;
+ }
+
+ .sml{
+    font-size: 9px;
+ }
+
+ .name{
+    font-size: 16px;
+ }
+
+ .numbers{
+    font-size: 8px;
+ }
+
+ .achieve-img{
+    width: 20px;
+    height: 15px;
+ }
+}

@@ -1,0 +1,135 @@
+.hero{
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    padding: 50px 0px;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.sub-hero{
+    width: 100%;
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    padding: 50px 0px;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.hero-txt{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lesson{
+    font-size: 60px;
+    font-weight: 700;
+    color: #4D4D4D;
+}
+
+.years{
+    font-size: 60px;
+    font-weight: 700;
+    color: #4caf50;
+}
+
+.hero-line{
+    font-size: 18px;
+    color: #4D4D4D;
+}
+
+.hero-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 30px;
+    font-size: 13px;
+}
+
+:hover.hero-btn{
+    background-color: #0a310c;
+}
+
+.dots {
+  position: relative;
+  cursor: pointer;
+  bottom: -20px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 1070px) {
+
+    .hero{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+        padding: 20px 0px;
+    }
+    .hero-txt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .lesson-combine{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .lesson{
+        font-size: 40px;
+
+    }
+    
+    .years{
+        font-size: 40px;
+    }
+    
+    .hero-line{
+        font-size: 13px;
+    }
+
+   
+}
+
+@media screen and (min-width: 300px) and (max-width: 424px) {
+   .hero-img img{
+       width: 200px;
+       height: 200px;
+   }
+    
+    
+
+    .lesson{
+        font-size: 25px;
+
+    }
+    
+    .years{
+        font-size: 25px;
+    }
+    
+    .hero-line{
+        font-size: 10px;
+        flex-wrap: wrap;
+    }
+
+}

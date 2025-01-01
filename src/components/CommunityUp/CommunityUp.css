@@ -1,0 +1,60 @@
+.communityUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  flex-direction: column;
+  padding: 30px 0px;
+  gap: 10px;
+}
+
+.communityup-h {
+  font-size: 30px;
+  font-weight: 700;
+  color: #4d4d4d;
+}
+
+.communityup-para {
+  font-size: 10px;
+  color: #89939e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 62%;
+  text-align: center;
+  padding: 20px 0px;
+}
+.customers-img{
+    width: 280px;
+}
+.communityup-imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.communityup-img {
+  width: 320px;
+  height: 320px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 300px) and (max-width: 650px) {
+  .communityup-h {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .communityup-para {
+    font-size: 8px;
+  }
+
+  .communityup-img {
+    width: 200px;
+    height: 200px;
+  }
+}

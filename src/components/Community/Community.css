@@ -1,0 +1,129 @@
+.community {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  flex-direction: column;
+  padding: 20px 0px;
+  gap: 30px;
+}
+
+.community-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.entire {
+  font-size: 30px;
+  font-weight: 700;
+  color: #4D4D4D;
+}
+
+.single {
+  font-size: 30px;
+  font-weight: 700;
+  color: #4D4D4D
+}
+
+.suitable {
+  font-size: 13px;
+  color: #89939e;
+}
+
+.community-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.community-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 250px;
+  border: 1px solid rgba(250, 247, 247, 0.603);
+  cursor: pointer;
+  padding: 20px 10px;
+
+}
+
+.community-img {
+  width: 40px;
+  height: 30px;
+}
+
+.card-h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 25px;
+  font-weight: 700;
+  color: #4D4D4D
+}
+
+.card-para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 13px;
+  color: #89939e;
+  text-align: center;
+  line-height: 15px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 650px) {
+  .community {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0px;
+    gap: 30px;
+  }
+
+  .entire {
+    font-size: 20px;
+    font-weight: 700;
+    color: #263238;
+  }
+
+  .single {
+    font-size: 20px;
+    font-weight: 700;
+    color: #263238;
+  }
+
+  .community-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .community-card {
+    padding: 10px 5px;
+  }
+
+  .card-h {
+    font-size: 16px;
+    font-weight: 700;
+    color: #263238;
+  }
+
+  .card-para {
+    font-size: 8px;
+    color: #89939e;
+  }
+}
