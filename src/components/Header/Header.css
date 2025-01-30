@@ -52,6 +52,13 @@ ul li a {
   text-decoration: none;
   color: black;
 }
+
+.nav-btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
 .login {
   background-color: #f5f7fa;
   padding: 10px 20px;
@@ -121,6 +128,10 @@ ul li a {
     right: 1px;
   }
 
+  .items-container li a{
+    color: white;
+  }
+
   .logo {
     display: none;
   }
@@ -165,11 +176,6 @@ ul li a {
     flex-direction: column;
     align-items: center;
   }
-
-  .white-color{
-    color: white!important;
-  }
-
   .container.active {
     transform: translateX(-0%);
   }

@@ -2,23 +2,30 @@ import React from "react";
 import "./Header.css";
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import SignIn from "../SignIn/SignIn";
 
 const Header = () => {
   const [showSideNav, setShowSideNav] = useState(false);
   const [isOpen, setisOpen] = useState(false);
-  const [colorChange, setColorChange] = useState(false);
-
-  const togglecolor = () => {
-    setColorChange(!colorChange);
-  };
-  console.log(colorChange);
+  const [hideForm, sethideForm] = useState(false);
 
   const toggleNav = () => {
     setisOpen(!isOpen);
     setShowSideNav(!showSideNav);
   };
+
+  const ShowSignInForm = () => {
+    sethideForm(!hideForm);
+    console.log(!hideForm);
+  };
+
+  const ShowSignUpForm = () => {
+    sethideForm(!hideForm);
+    console.log(!hideForm);
+  };
   return (
     <>
+      {/* {hideForm? <SignIn/>:null} */}
       <header>
         <div className="burger-query">
           <div className="logo-2">
@@ -27,7 +34,8 @@ const Header = () => {
           </div>
           <div className="burger" onClick={toggleNav}>
             {showSideNav ? (
-              <svg className="cross"
+              <svg
+                className="cross"
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
@@ -58,7 +66,6 @@ const Header = () => {
               </svg>
             ) : (
               <div>
-                {" "}
                 <div className="burgerbar"></div>
                 <div className="burgerbar"></div>
                 <div className="burgerbar"></div>
@@ -77,9 +84,8 @@ const Header = () => {
                 <li>
                   {" "}
                   <NavLink
-                    onClick={togglecolor}
                     to={"/Home"}
-                    className={` ${colorChange ? "nav-active" : "white-color"}`}
+                    className={({ isActive }) => (isActive ? "nav-active" : "")}
                   >
                     Home
                   </NavLink>
@@ -88,7 +94,8 @@ const Header = () => {
                   {" "}
                   <NavLink
                     to={"/Service"}
-               className={` ${colorChange ? "nav-active" : "white-color"}`}>
+                    className={({ isActive }) => (isActive ? "nav-active" : "")}
+                  >
                     Service
                   </NavLink>
                 </li>
@@ -96,7 +103,8 @@ const Header = () => {
                   {" "}
                   <NavLink
                     to={"/Feature"}
-               className={` ${colorChange ? "nav-active" : "white-color"}`}>
+                    className={({ isActive }) => (isActive ? "nav-active" : "")}
+                  >
                     Feature
                   </NavLink>
                 </li>
@@ -104,7 +112,8 @@ const Header = () => {
                   {" "}
                   <NavLink
                     to={"/Product"}
-               className={` ${colorChange ? "nav-active" : "white-color"}`}>
+                    className={({ isActive }) => (isActive ? "nav-active" : "")}
+                  >
                     Product
                   </NavLink>
                 </li>
@@ -112,7 +121,8 @@ const Header = () => {
                   {" "}
                   <NavLink
                     to={"/Testimonial"}
-               className={` ${colorChange ? "nav-active" : "white-color"}`}>
+                    className={({ isActive }) => (isActive ? "nav-active" : "")}
+                  >
                     Testimonial
                   </NavLink>
                 </li>
@@ -120,15 +130,31 @@ const Header = () => {
                   {" "}
                   <NavLink
                     to={"/FAQ"}
-               className={` ${colorChange ? "nav-active" : "white-color"}`}>
+                    className={({ isActive }) => (isActive ? "nav-active" : "")}
+                  >
                     FAQ
                   </NavLink>
                 </li>
               </ul>
             </div>
             <div className="nav-btns">
-              <button className="login">Login</button>
-              <button className="signup">Sign up</button>
+              <div>
+                {" "}
+                <NavLink to={"/Login"}>
+                  <button onClick={ShowSignInForm} className="login">
+                    Login
+                  </button>
+                </NavLink>
+              </div>
+              <div>
+                {" "}
+                <NavLink to={"/SignUp"}>
+                  {" "}
+                  <button onClick={ShowSignUpForm} className="signup">
+                    Sign up
+                  </button>
+                </NavLink>
+              </div>
             </div>
           </div>
         </nav>

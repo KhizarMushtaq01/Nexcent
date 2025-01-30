@@ -37,6 +37,7 @@
   cursor: pointer;
 }
 
+
 :hover.footer-btn button {
   background: #0a310c;
 }
@@ -91,6 +92,7 @@
   font-family: "Inter", sans-serif;
   margin: 10px 0px;
   list-style: none;
+  cursor: pointer;
 }
 
 .company-1 {

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -9,9 +10,12 @@ const Footer = () => {
           <div className="footer-txt">The children are welcome</div>
           <div className="footer-txt">to ecological free me</div>
           <div className="footer-btn">
+          
+          <NavLink to="https://youtu.be/CGEjwCUcMHo?si=Uj6BbuSXQnACG6ZL">
           <button>
             Get a Demo <img src="/icons/white-arrow.png" alt="" />
           </button>
+          </NavLink>
           </div>
         </div>
         <div className="footer-dwn">

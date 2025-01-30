@@ -52,9 +52,11 @@
   .communityup-para {
     font-size: 8px;
   }
+}
 
+@media screen and (min-width: 300px) and (max-width: 450px) {
   .communityup-img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
   }
 }
